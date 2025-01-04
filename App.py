@@ -106,13 +106,13 @@ if st.session_state.page == 1:
         }
         
         .block-container {
-        margin-left: 50px;   /* Lebih ke kiri */
-        left: -100px;        /* Lebih ke kiri lagi */
+        margin-left: 70px;   /* Lebih ke kiri */
+        left: -120px;        /* Lebih ke kiri lagi */
         }
         
         div[data-testid="stVerticalBlock"] {
-        margin-left: 50px;   /* Lebih ke kiri */
-        left: -100px;        /* Lebih ke kiri lagi */
+        margin-left: 70px;   /* Lebih ke kiri */
+        left: -120px;        /* Lebih ke kiri lagi */
         }
         </style>
         """, unsafe_allow_html=True)
