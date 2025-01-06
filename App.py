@@ -55,7 +55,6 @@ def add_background(image_file):
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
-
 if "page" not in st.session_state:
     st.session_state.page = 1
 if "positive" not in st.session_state:
@@ -75,47 +74,47 @@ if st.session_state.page == 1:
     for _ in range(27):  # Menggantikan multiple st.write("")
         st.write("")
 
-    st.markdown("""
-        <style>
-        .stButton>button {
-            background-color: grey;
-            color: #0C2227;
-            border: 1px solid grey;
-            margin-left: 100px;  /* Tambahkan margin dari kiri */
-            position: relative;  /* Tambahkan positioning */
-            left: -200px;      /* Geser ke kiri */
-        }
-        .stButton>button:hover {
-            background-color: #64D98A;
-            color: #0C2227;
-            border: #64D98A;
-        }
-        .stButton>button:active {
-            background-color: #64D98A !important;
-            color: #0C2227 !important;
-            border: #64D98A;
-        }
-        .stButton>button:focus {
-            background-color: #64D98A !important;
-            color: #0C2227 !important;
-            border: #64D98A !important;
-            box-shadow: none !important;
-        }
-        .stButton>button:focus:not(:focus-visible) {
-            outline: none !important;
-        }
+    # st.markdown("""
+    #     <style>
+    #     .stButton>button {
+    #         background-color: grey;
+    #         color: #0C2227;
+    #         border: 1px solid grey;
+    #         margin-left: 100px;  /* Tambahkan margin dari kiri */
+    #         position: relative;  /* Tambahkan positioning */
+    #         left: -200px;      /* Geser ke kiri */
+    #     }
+    #     .stButton>button:hover {
+    #         background-color: #64D98A;
+    #         color: #0C2227;
+    #         border: #64D98A;
+    #     }
+    #     .stButton>button:active {
+    #         background-color: #64D98A !important;
+    #         color: #0C2227 !important;
+    #         border: #64D98A;
+    #     }
+    #     .stButton>button:focus {
+    #         background-color: #64D98A !important;
+    #         color: #0C2227 !important;
+    #         border: #64D98A !important;
+    #         box-shadow: none !important;
+    #     }
+    #     .stButton>button:focus:not(:focus-visible) {
+    #         outline: none !important;
+    #     }
         
-        .block-container {
-        margin-left: 70px;   /* Lebih ke kiri */
-        left: -150px;        /* Lebih ke kiri lagi */
-        }
+    #     .block-container {
+    #     margin-left: 70px;   /* Lebih ke kiri */
+    #     left: -150px;        /* Lebih ke kiri lagi */
+    #     }
         
-        div[data-testid="stVerticalBlock"] {
-        margin-left: 70px;   /* Lebih ke kiri */
-        left: -150px;        /* Lebih ke kiri lagi */
-        }
-        </style>
-        """, unsafe_allow_html=True)
+    #     div[data-testid="stVerticalBlock"] {
+    #     margin-left: 70px;   /* Lebih ke kiri */
+    #     left: -150px;        /* Lebih ke kiri lagi */
+    #     }
+    #     </style>
+    #     """, unsafe_allow_html=True)
     
     if st.button("Start Your Detection Now"):
         next_page()
@@ -127,52 +126,52 @@ elif st.session_state.page == 2:
     for _ in range(10): 
         st.write("")
     
-    st.markdown("""
-    <style>
-    /* Style untuk number input container */
-    .stNumberInput div[data-baseweb="input"] {
-                # background-color: #1E1E1E !important;
-        border: none !important;
-    }
+#     st.markdown("""
+#     <style>
+#     /* Style untuk number input container */
+#     .stNumberInput div[data-baseweb="input"] {
+#                 # background-color: #1E1E1E !important;
+#         border: none !important;
+#     }
                 
-    /* Style untuk tombol plus dan minus saat hover */
-    .stNumberInput button:hover {
-        background-color: #64D98A !important;
-        color: white !important;
-    }
+#     /* Style untuk tombol plus dan minus saat hover */
+#     .stNumberInput button:hover {
+#         background-color: #64D98A !important;
+#         color: white !important;
+#     }
     
-    /* Style untuk tombol plus dan minus saat active/diklik */
-    .stNumberInput button:active {
-        background-color: #64D98A !important;
-        color: white !important;
-    }
+#     /* Style untuk tombol plus dan minus saat active/diklik */
+#     .stNumberInput button:active {
+#         background-color: #64D98A !important;
+#         color: white !important;
+#     }
     
-    /* Style untuk number input field */
-    input[type="number"] {
-                # background-color: #1E1E1E !important;
-        color: white !important;
-        border: none !important;
-    }
+#     /* Style untuk number input field */
+#     input[type="number"] {
+#                 # background-color: #1E1E1E !important;
+#         color: white !important;
+#         border: none !important;
+#     }
 
-    /* Menghilangkan border focus */
-    .stNumberInput div[data-baseweb="input"]:focus-within {
-        border: none !important;
-        box-shadow: none !important;
-    }
+#     /* Menghilangkan border focus */
+#     .stNumberInput div[data-baseweb="input"]:focus-within {
+#         border: none !important;
+#         box-shadow: none !important;
+#     }
     
-    .stButton>button:focus {
-    background-color: #64D98A !important;
-    color: #0C2227 !important;
-    border: #64D98A !important;
-    box-shadow: none !important;
-    }
+#     .stButton>button:focus {
+#     background-color: #64D98A !important;
+#     color: #0C2227 !important;
+#     border: #64D98A !important;
+#     box-shadow: none !important;
+#     }
                 
-    /* Mencegah outline merah saat focus */
-    .stButton>button:focus:not(:focus-visible) {
-        outline: none !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
+#     /* Mencegah outline merah saat focus */
+#     .stButton>button:focus:not(:focus-visible) {
+#         outline: none !important;
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
     
     # Gunakan kolom untuk tata letak text input
     col1, col2 = st.columns(2)
@@ -210,28 +209,28 @@ elif st.session_state.page == 2:
     model_path = 'randomforest_model.joblib'
     forest = load(model_path)
 
-    st.markdown("""
-        <style>
-        .stButton>button {
-            background-color: grey;
-            color: #0C2227;
-            border: 1px solid grey;
-        }
-        .stButton>button:hover {
-            background-color: #64D98A;
-            color: #0C2227;
-            border: #64D98A;
-        }
-        .stButton>button:active {
-            background-color: #64D98A !important;
-            color: #0C2227 !important;
-            border: #64D98A;
-        }
-        </style>
-        """, unsafe_allow_html=True)
+    # st.markdown("""
+    #     <style>
+    #     .stButton>button {
+    #         background-color: grey;
+    #         color: #0C2227;
+    #         border: 1px solid grey;
+    #     }
+    #     .stButton>button:hover {
+    #         background-color: #64D98A;
+    #         color: #0C2227;
+    #         border: #64D98A;
+    #     }
+    #     .stButton>button:active {
+    #         background-color: #64D98A !important;
+    #         color: #0C2227 !important;
+    #         border: #64D98A;
+    #     }
+    #     </style>
+    #     """, unsafe_allow_html=True)
         
     # Prediksi jika tombol ditekan
-    if st.button("Prediksi"):
+    if st.button("Predict"):
         # Data input dari user
         user_input = np.array([memory_complaints, behavioral_problems, mmse, adl, functional_assessment]).reshape(1, -1)
 
